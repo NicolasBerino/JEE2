@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<openejb>
+
+<Resource id = "MyDataSource" type="DataSource">
+JdbcDriver org.hsqldb.jdbcDriver
+JdbcUrl jdbc:hsqldb:file:data/hsqldb/hsqldb
+UserName sa
+Password
+JtaManaged true
+</Resource>
+
+<Resource id = "MyUnmanagedDataSource" type="DataSource">
+JdbcDriver org.hsqldb.jdbcDriver
+JdbcUrl jdbc:hsqldb:file:data/hsqldb/hsqldb
+UserName sa
+Password
+JtaManaged false
+</Resource>
+
+<Resource id = "myDS" type="DataSource">
+JdbcDriver com.mysql.jdbc.Driver
+JdbcUrl jdbc:mysql://dbs-perso.luminy.univmed.fr/b13000276
+UserName b13000276
+Password fqqg=+:d
+JtaManaged false
+</Resource>
+
+</openejb>
